@@ -2,12 +2,21 @@ package com.example.springcourse_annotations.controllers;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.example.springcourse_annotations.interfaces.Music;
 
-@Component("musicPlayerBean")
+/*
+ * We can make injection using @Autowired
+ * 1. on fiels
+ * 2. on setters
+ * 3. on constructors
+ */
+
+@Component
 public class MusicPlayer {
+    @Autowired
     private Music music;
 
     private String name;
@@ -41,6 +50,7 @@ public class MusicPlayer {
         this.volume = volume;
     }
 
+    // @Autowired
     public void setMusic(Music music) {
         this.music = music;
     }
@@ -63,6 +73,7 @@ public class MusicPlayer {
         this.musicList = musicList;
     }
 
+    // @Autowired
     public MusicPlayer(Music music) {
         this.music = music;
     }

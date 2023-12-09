@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 import com.example.springcourse_annotations.interfaces.Music;
 
-@Component("someAlternative")
+//@Component("someAlternative")
 public class Alternative implements Music {
     @Override
     public String getSong() {

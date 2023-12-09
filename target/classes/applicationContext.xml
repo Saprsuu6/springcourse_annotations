@@ -6,5 +6,5 @@
                         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
                     
 
-                        <context:component-scan base-package="com.example.springcourse_annotations"></context:component-scan>
+    <context:component-scan base-package="com.example.springcourse_annotations"></context:component-scan>
 </beans>

@@ -41,11 +41,8 @@ public class App {
     }
 
     private static void secondLevelBean(ClassPathXmlApplicationContext context) {
-        Music ambient = context.getBean("someAmbient", Ambient.class);
-        System.out.println(ambient.getSong());
-
-        // MusicPlayer player = context.getBean("musicPlayerBean", MusicPlayer.class);
-        // player.play();
+        MusicPlayer player = context.getBean("musicPlayer", MusicPlayer.class);
+        player.play();
     }
 
     private static void injectionFromPropUsingProp(ClassPathXmlApplicationContext context) {
